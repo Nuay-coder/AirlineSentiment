@@ -1,0 +1,22 @@
+# Core modelling
+torch>=2.2
+transformers>=4.41        # cell 16 uses TrainingArguments(eval_strategy=...),
+                          # renamed from evaluation_strategy in 4.41
+accelerate>=0.26          # required by transformers.Trainer
+datasets>=2.18
+sentencepiece>=0.2        # tokenizer backend for some checkpoints
+
+# Data & metrics
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+
+# Plots
+matplotlib>=3.7
+seaborn>=0.13
+
+# Imported by the notebook
+nltk>=3.8
+
+# Notebook runtime (skip on Colab)
+jupyter>=1.0
